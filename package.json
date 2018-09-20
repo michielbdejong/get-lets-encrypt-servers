@@ -1,0 +1,29 @@
+{
+  "name": "get-lets-encrypt-servers",
+  "version": "1.0.0",
+  "dependencies": {
+    "greenlock": "^2.4.2",
+    "le-acme-core": "^2.1.3"
+  },
+  "browser": {
+    "greenlock": false,
+    "le-acme-core": false,
+    "le-challenge-fs": false,
+    "le-store-certbot": false
+  },
+  "description": "wrapper around GreenLock for creating a http (port 80) and https (port 443) server with on-the-fly LetsEncrypt registration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michielbdejong/get-lets-encrypt-servers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michielbdejong/get-lets-encrypt-servers/issues"
+  },
+  "homepage": "https://github.com/michielbdejong/get-lets-encrypt-servers#readme"
+}
