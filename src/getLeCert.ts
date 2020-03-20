@@ -4,7 +4,7 @@ import Greenlock from "greenlock";
 export type Pems = {
   privkey: string;
   cert: string;
-  chain: string;
+  chain?: string;
 };
 
 export async function getLeCert(domain: string): Promise<Pems> {

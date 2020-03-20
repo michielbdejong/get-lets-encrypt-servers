@@ -58,6 +58,7 @@
     }
   },
   "dependencies": {
-    "greenlock": "^4.0.4"
+    "greenlock": "^4.0.4",
+    "openssl-nodejs": "^1.0.5"
   }
 }
