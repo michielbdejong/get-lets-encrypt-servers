@@ -27,14 +27,7 @@ export async function getLetsEncryptServers(options: Options): Promise<void> {
   } else {
     certs = await getLeCert(options.domain);
   }
-  const httpsServer = httpsCreateServer(
-    {
-      key: certs.privkey,
-      cert: certs.cert,
-      ca: certs.chain
-    },
-    options.handler
-  );
+  const httpsServer = httpsCreateServer(certs, options.handler);
   httpsServer.listen(options.httpsPort || 443);
 }
 

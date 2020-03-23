@@ -2,9 +2,9 @@ import * as pkg from "../package.json";
 import Greenlock from "greenlock";
 
 export type Pems = {
-  privkey: string;
-  cert: string;
-  chain?: string;
+  key: Buffer;
+  cert: Buffer;
+  chain?: Buffer;
 };
 
 export async function getLeCert(domain: string): Promise<Pems> {
